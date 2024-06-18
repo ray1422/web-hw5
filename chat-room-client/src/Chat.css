@@ -1,0 +1,81 @@
+.chat-container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.user-list {
+    width: 20%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+}
+
+.user-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.chat-window {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.message-image {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.message-form {
+    display: flex;
+    align-items: center;
+}
+
+.message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.send-button, .file-label {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-button:hover, .file-label:hover {
+    background-color: #45a049;
+}
+
+.file-input {
+    display: none;
+}
